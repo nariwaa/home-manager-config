@@ -5,6 +5,11 @@
   home.homeDirectory = "/home/ayaya";
   home.stateVersion = "23.11"; 
 
+  imports =
+    [
+      ./modules/rofi.nix
+    ];
+
 #  home.packages = [
   home.packages = with pkgs; [
     dconf
@@ -68,7 +73,8 @@
       disabled = true;
       };
   };
-  # Home Manager is pretty good at managing dotfiles. The primary way to manage
+
+# Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
   home.file = {
     # # Building this configuration will create a copy of 'dotfiles/screenrc' in
