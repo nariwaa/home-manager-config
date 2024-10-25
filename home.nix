@@ -9,6 +9,7 @@
       ./modules/rofi.nix
       ./modules/starship.nix
       ./modules/waybar.nix
+      ./modules/default-apps.nix
     ];
 
 #  home.packages = [
@@ -48,14 +49,6 @@
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
       };
-    };
-  };
-
-  xdg.mimeApps = {
-    enable = true;
-    defaultApplications = {
-      "inode/directory" = [ "thunar.desktop" ];
-      "application/x-gnome-saved-search" = [ "thunar.desktop" ];
     };
   };
 
