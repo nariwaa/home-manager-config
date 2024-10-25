@@ -8,6 +8,7 @@
     [
       ./modules/rofi.nix
       ./modules/starship.nix
+      ./modules/waybar.nix
     ];
 
 #  home.packages = [
@@ -15,6 +16,15 @@
     dconf
     breeze-icons
   ];
+
+
+  home.pointerCursor = {
+    gtk.enable = true;
+    # x11.enable = true;
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Classic";
+    size = 16;
+  };
 
     gtk = {
     enable = true;
