@@ -66,8 +66,9 @@
       }
 
       #pulseaudio.muted {
-        background-color: @color1;
+        background-color: #fcd4d4;
         color: @background;
+        box-shadow: inset 0 0 8px #ff0000;
       }
 
       #custom-mem {
