@@ -10,6 +10,7 @@
       ./modules/starship.nix
       ./modules/waybar.nix
       ./modules/default-apps.nix
+      ./modules/fish.nix
     ];
 
 #  home.packages = [
