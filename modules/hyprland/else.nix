@@ -13,6 +13,7 @@
         "fcitx5-remote -r"
         "dunst"
         "greenclip daemon"
+        "hyprctl hyprctl setcursor Bibata-Modern-Classic 35"
       ];
 
       # Environment variables
