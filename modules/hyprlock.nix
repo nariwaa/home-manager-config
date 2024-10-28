@@ -40,7 +40,7 @@
         font_color = rgb(200, 200, 200)
         fade_on_empty = false
         font_family = JetBrains Mono Nerd Font Mono
-        placeholder_text = <span foreground="##cdd6f4">    $USER</span>
+        placeholder_text = <span foreground="##cdd6f4">    $USER</span>
         hide_input = false
         position = 0, -130
         halign = center
