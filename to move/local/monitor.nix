@@ -1,5 +1,5 @@
 # ############################################################# #
-# ADD THIS TO ~/.config/home-manager-local/hyprland/monitor.nix #
+# ADD THIS TO ~/.config/home-manager/local/monitor.nix #
 # ############################################################# #
 
 { config, pkgs, ... }:

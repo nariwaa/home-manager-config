@@ -1,5 +1,6 @@
 { config, pkgs, ... }:
 {
+  imports =
     [
       ./modules/rofi.nix
       ./modules/starship.nix
