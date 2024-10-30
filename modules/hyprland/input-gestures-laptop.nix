@@ -16,7 +16,7 @@
       # Input settings
       input = {
         touchpad = {
-          natural_scroll = false;
+          natural_scroll = true;
           clickfinger_behavior = true;
         };
         scroll_factor = 1;
