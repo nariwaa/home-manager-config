@@ -24,7 +24,7 @@
         kb_layout = "us";
         kb_options = "$escswap, grp:alt_space_toggle";
         kb_variant = "altgr-intl";
-        sensitivity = 1;
+        sensitivity = 0.5;
       };
     };
   };
