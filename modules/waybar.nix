@@ -290,7 +290,7 @@
       };
 
       "custom/distro" = {
-        format = "";
+        format = "";
         min-length = 2;
       };
     }];
