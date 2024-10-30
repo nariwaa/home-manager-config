@@ -20,10 +20,10 @@ in
         "8, monitor:${screenv.screen1}, persistent:1"
         "9, monitor:${screenv.screen1}, persistent:1"
         "10, monitor:${screenv.screen1}, persistent:1"
-        "11, monitor:DP-2, persistent:1"
-        "12, monitor:DP-2, persistent:1"
-        "21, monitor:HDMI-A-2, persistent:1"
-        "22, monitor:HDMI-A-2, persistent:1"
+        "11, monitor:${screenv.screen2}, persistent:1"
+        "12, monitor:${screenv.screen2}, persistent:1"
+        "21, monitor:${screenv.screen3}, persistent:1"
+        "22, monitor:${screenv.screen3}, persistent:1"
       ];
     };
   };

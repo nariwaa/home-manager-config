@@ -1,17 +1,22 @@
 # ############################################################# #
-# ADD THIS TO ~/.config/home-manager/local/monitor.nix #
+# ADD THIS TO ~/.config/home-manager-local/hyprland/monitor.nix #
 # ############################################################# #
 
 { config, pkgs, ... }:
+
+let
+  screenv = import ./monitorvariable.nix;
+in
+
 {
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
       # Monitor configuration
       monitor = [
-        "DP-1, 2560x1440@165, 0x0, 1"
-        "DP-2, 1920x1080@60, 250x-1080, 1"
-        "HDMI-A-2, 1920x1080, -1080x-230, 1, transform, 3"
+        "${screenv.screen1}, 2560x1440@165, 0x0, 1"
+        "${screenv.screen2}, 1920x1080@60, 250x-1080, 1"
+        "${screenv.screen3}, 1920x1080, -1080x-230, 1, transform, 3"
       ];
     };
   };

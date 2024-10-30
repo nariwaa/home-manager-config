@@ -1,24 +1,29 @@
 { config, pkgs, ... }:
+
+let
+  screenv = import ../../../local/monitorvariable.nix;
+in
+
 {
   wayland.windowManager.hyprland = {
     enable = true;
     settings = {
       # Workspace rules
       workspace = [
-        "1, monitor:DP-1, persistent:1"
-        "2, monitor:DP-1, persistent:1"
-        "3, monitor:DP-1, persistent:1"
-        "4, monitor:DP-1, persistent:1"
-        "5, monitor:DP-1, persistent:1"
-        "6, monitor:DP-1, persistent:1"
-        "7, monitor:DP-1, persistent:1"
-        "8, monitor:DP-1, persistent:1"
-        "9, monitor:DP-1, persistent:1"
-        "10, monitor:DP-1, persistent:1"
-        "11, monitor:DP-2, persistent:1"
-        "12, monitor:DP-2, persistent:1"
-        "21, monitor:HDMI-A-2, persistent:1"
-        "22, monitor:HDMI-A-2, persistent:1"
+        "1, monitor:${screenv.screen1}, persistent:1"
+        "2, monitor:${screenv.screen1}, persistent:1"
+        "3, monitor:${screenv.screen1}, persistent:1"
+        "4, monitor:${screenv.screen1}, persistent:1"
+        "5, monitor:${screenv.screen1}, persistent:1"
+        "6, monitor:${screenv.screen1}, persistent:1"
+        "7, monitor:${screenv.screen1}, persistent:1"
+        "8, monitor:${screenv.screen1}, persistent:1"
+        "9, monitor:${screenv.screen1}, persistent:1"
+        "10, monitor:${screenv.screen1}, persistent:1"
+        "11, monitor:${screenv.screen2}"
+        "12, monitor:${screenv.screen2}"
+        "21, monitor:${screenv.screen3}"
+        "22, monitor:${screenv.screen3}"
       ];
     };
   };
