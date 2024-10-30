@@ -17,9 +17,9 @@
       input = {
         touchpad = {
           natural_scroll = true;
+          clickfinger_behavior = true;
         };
         scroll_factor = 1;
-        scroll_method = 2fg;
         follow_mouse = 1;
         kb_layout = "us";
         kb_options = "$escswap, grp:alt_space_toggle";
