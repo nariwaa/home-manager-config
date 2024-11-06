@@ -29,14 +29,14 @@
 
       #workspaces button {
         transition: none;
-        color: @color7;
+        color: @color2;
         background: transparent;
         padding: 5px;
         font-size: 18px;
       }
 
       #workspaces button.persistent {
-        color: @color7;
+        color: @color3;
         font-size: 12px;
       }
 
@@ -46,11 +46,11 @@
         text-shadow: inherit;
         border-radius: inherit;
         color: @background;
-        background: @color7;
+        background: @color1;
       }
 
       #workspaces button.active {
-        background: @color4;
+        background: @color2;
         color: @background;
         border-radius: inherit;
       }
@@ -132,7 +132,7 @@
       }
 
       #battery.warning:not(.charging) {
-        background-color: @color3;
+        background-color: #AA0000;
         color: @background;
       }
 
