@@ -21,7 +21,8 @@
         scroll_factor = 1;
         follow_mouse = 1;
         kb_layout = "us";
-        kb_options = "$escswap, grp:alt_space_toggle";
+        kb_options = "caps:escape, grp:alt_space_toggle";
+        #kb_options = "grp:alt_space_toggle";
         kb_variant = "altgr-intl";
         sensitivity = -0.5;
       };
