@@ -54,10 +54,12 @@
           size = 10;
           passes = 2;
         };
-        drop_shadow = true;
+        shadow = {
+          enabled = true;
+          range = 6;
+          render_power = 6;
+        };
         rounding = 10;
-        shadow_range = 4;
-        shadow_render_power = 3;
       };
 
       # General settings
