@@ -21,6 +21,7 @@
         "SUPER, Space, exec, rofi -show combi -combi-modi \"drun,obsidian:rofi-obsidian,emoji,power:rofi-power-menu\" -modi combi"
         "SUPER CTRL, Space, exec, rofi -show calc"
         "SUPER, W, exec, ~/.config/sh/wall-choose.sh"
+        "SUPER ALT, W, exec, kitty --hold sh ~/.config/sh/wall-regenerate.sh"
 
         # Screenshot bindings
         "SUPER, P, exec, screenl"
