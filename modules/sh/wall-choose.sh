@@ -8,7 +8,7 @@ display_wallpapers() {
     done | rofi -dmenu -i -p "Select $mode wallpaper" -width 1000 -lines 10 -eh 1 -matching fuzzy)
 
     if [[ -n "$selected" ]]; then
-        wall "$selected" 
+        /home/ayaya/.config/sh/wall-set.sh "$selected" 
     fi
 }
 
