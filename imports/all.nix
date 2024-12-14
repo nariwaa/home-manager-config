@@ -13,5 +13,6 @@
       ./../modules/fish.nix
       ./../modules/hyprlock.nix
       ./../modules/else.nix
+      ./../modules/sh.nix
     ];
 }
