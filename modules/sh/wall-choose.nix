@@ -1,5 +1,5 @@
 {
-  home.file."~/.config/sh/wall-choose" = {
+  home.file."/home/ayaya/.config/sh/wall-choose.sh" = {
     text = ''
 # Function to display wallpapers with preview
 display_wallpapers() {
