@@ -16,13 +16,15 @@ display_wallpapers() {
 }
 
 # Main menu to select dark or light mode
-mode=$(echo -e "Dark\nLight" | rofi -dmenu -i -p "Select Mode" -width 300 -lines 2 -eh 1 -matching fuzzy)
+tdark="   Dark  "
+tlight="󰖨   Light  󰖨"
+mode=$(echo -e "$tdark\n$tlight" | rofi -dmenu -i -p "Select Mode" -width 300 -lines 2 -eh 1 -matching fuzzy)
 
 case $mode in
-    "Dark")
+    $tdark)
         display_wallpapers "Dark"
         ;;
-    "Light")
+    $tlight)
         display_wallpapers "Light"
         ;;
     *)
