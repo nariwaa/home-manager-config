@@ -28,6 +28,7 @@
         "SUPER SHIFT, P, exec, screens"
         "CTRL, home, exec, screent"
 
+        # VIM
         # Focus movement
         "SUPER, h, movefocus, l"
         "SUPER, l, movefocus, r"
@@ -45,6 +46,25 @@
         "SUPER CTRL, l, resizeactive, 60 0"
         "SUPER CTRL, k, resizeactive, 0 -60"
         "SUPER CTRL, j, resizeactive, 0 60"
+
+        # Arrows
+        # Focus movement
+        "SUPER, left, movefocus, l"
+        "SUPER, right, movefocus, r"
+        "SUPER, up, movefocus, u"
+        "SUPER, down, movefocus, d"
+
+        # Window swapping
+        "SUPER SHIFT, left, swapwindow, l"
+        "SUPER SHIFT, right, swapwindow, r"
+        "SUPER SHIFT, up, swapwindow, u"
+        "SUPER SHIFT, down, swapwindow, d"
+
+        # Window resizing
+        "SUPER CTRL, left, resizeactive, -60 0"
+        "SUPER CTRL, right, resizeactive, 60 0"
+        "SUPER CTRL, up, resizeactive, 0 -60"
+        "SUPER CTRL, down, resizeactive, 0 60"
 
         # Workspace switching
         "SUPER, 1, workspace, 1"
