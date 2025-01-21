@@ -14,6 +14,7 @@
         "dunst"
         "greenclip daemon"
         "hyprctl hyprctl setcursor Bibata-Modern-Classic 35"
+        "ulauncher"
       ];
 
       # Environment variables
