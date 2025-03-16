@@ -6,13 +6,13 @@ count=0
 
 swww kill
 
-for img in /sync/wall/Dark/*; do
+for img in ~/Wall/Dark/*; do
     wal -i "$img"
     count=$((count + 1))
     echo "$count images done!"
 done
 
-for img in /sync/wall/Light/*; do
+for img in ~/Wall/Light/*; do
     wal -i "$img"
     count=$((count + 1))
     echo "$count images done!"

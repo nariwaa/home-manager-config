@@ -4,14 +4,14 @@
 # Function to display wallpapers with preview
 display_wallpapers() {
     local mode=$1
-    local dir="/sync/wall/$mode"
+    local dir="/home/ayaya/Wall/$mode"
     local selected=$(find "$dir" -type f \( -iname "*.gif" -o -iname "*.png" \) | \
     while read -r img; do
-        echo -en "$img\x00icon\x1f$(echo "$img" | sed 's/ /%20/g')\n"
+      echo -en "$img\x00icon\x1f$(echo "$img" | sed 's/ /%20/g')\n"
     done | rofi -dmenu -i -p "Select $mode wallpaper" -width 1000 -lines 10 -eh 1 -matching fuzzy)
 
     if [[ -n "$selected" ]]; then
-        wall "$selected" 
+      wall "$selected" 
     fi
 }
 

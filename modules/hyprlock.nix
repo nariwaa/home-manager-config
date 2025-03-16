@@ -62,7 +62,7 @@
     # Cool text
     label {
         monitor =
-        text = cmd[] shuf -n 1 /sync/wall/splash.txt
+        text = cmd[] shuf -n 1 ~/Wall/splash.txt
         color = $foreground
         font_size = 25
         font_family = JetBrains Mono Nerd Font Mono
