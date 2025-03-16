@@ -1,7 +1,6 @@
 { config, pkgs, ... }:
 {
   wayland.windowManager.hyprland = {
-    enable = true;
     settings = {
 
       # Gesture settings

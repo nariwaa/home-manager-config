@@ -1,7 +1,15 @@
 { config, pkgs, ... }:
 {
   wayland.windowManager.hyprland = {
-    enable = true;
+    package = pkgs.hyprland;
+    # portalPackage = pkgs.xdg-desktop-portal-hyprland;
+
+    systemd = {     
+      enable = true;     
+      variables = ["--all"];     
+    };
+
+    # enable = true;
     settings = {
       # Startup applications
       "exec-once" = [
