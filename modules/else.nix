@@ -1,11 +1,9 @@
 { config, pkgs, ... }:
 {
-#  home.packages = [
   home.packages = with pkgs; [
     dconf
     breeze-icons
   ];
-
 
   home.pointerCursor = {
     gtk.enable = true;

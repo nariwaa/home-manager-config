@@ -13,7 +13,7 @@
     settings = {
       # Startup applications
       "exec-once" = [
-        "waybar"
+        "hyprpanel"
         "swww-daemon"
         "kdeconnect-indicator"
         "polkit"
