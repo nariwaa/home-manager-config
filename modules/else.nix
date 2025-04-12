@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [
     dconf
-    breeze-icons
+    kdePackages.breeze-icons
   ];
 
   home.pointerCursor = {
