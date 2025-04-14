@@ -12,14 +12,12 @@ eval (keychain --eval --agents ssh --quiet)
 
 # cd stuff
 function cd
-    builtin cd $argv; and lsd
+  builtin cd $argv; and lsd
 end
 
 # alias
 alias e nvim
 alias music-dlp='yt-dlp -x --audio-format mp3 --audio-quality 0 --embed-thumbnail --embed-metadata -o "%(creator,uploader,channel)s - %(title)s.%(ext)s"'
-
-tmux
 
     '';
   };
