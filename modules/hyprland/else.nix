@@ -25,6 +25,18 @@
         "ulauncher"
       ];
 
+      windowrulev2 = [
+        "float,class:^(brave-t3.chat__-Default)$"
+        "noborder,class:^(brave-t3.chat__-Default)$"
+        "xray,class:^(brave-t3.chat__-Default)$"
+        "animation slide right,class:^(brave-t3.chat__-Default)$"
+        "opacity 0.94 override 0.89 override 1 override,class:^(brave-t3.chat__-Default)$"
+        "size 20% 90%,class:^(brave-t3.chat__-Default)$"
+        "move 80% 100,class:^(brave-t3.chat__-Default)$"
+        "rounding 0,class:^(brave-t3.chat__-Default)$"
+        "bordercolor 0,class:^(brave-t3.chat__-Default)$"
+      ];
+
       # Environment variables
       env = [
         "HYPRCURSOR_THEME,Bibata-Modern-Classic"
