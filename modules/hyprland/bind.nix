@@ -5,6 +5,8 @@
       bind = [
         # Terminal and window management
         "SUPER, Return, exec, alacritty"
+        "SUPER, A, exec, brave --app=https://t3.chat/"
+        "SUPER, B, exec, brave"
         "SUPER, C, killactive"
         "SUPER, E, exec, thunar"
         "SUPER, F, togglefloating"
