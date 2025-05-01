@@ -6,6 +6,7 @@
   imports =
     [
       ./../modules/rofi.nix
+      ./../modules/fastfetch.nix
       ./../modules/starship.nix
       ./../modules/waybar.nix
       ./../modules/default-apps.nix
