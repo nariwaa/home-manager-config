@@ -5,7 +5,7 @@
     defaultApplications = {
       # Web browser
       "text/html" = ["brave.desktop"];
-      "application/pdf" = ["zathura.desktop"];
+      "application/pdf" = ["org.pwmt.zathura-pdf-mupdf.desktop"];
       "x-scheme-handler/http" = ["brave.desktop"];
       "x-scheme-handler/https" = ["brave.desktop"];
       "x-scheme-handler/about" = ["brave.desktop"];
