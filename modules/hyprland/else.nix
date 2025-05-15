@@ -13,6 +13,7 @@
     settings = {
       # Startup applications
       "exec-once" = [
+        "mpDris2"
         "hyprpanel"
         "swww-daemon"
         "kdeconnect-indicator"
