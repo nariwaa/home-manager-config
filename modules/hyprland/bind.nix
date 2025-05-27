@@ -11,25 +11,26 @@
         "SUPER, E, exec, thunar"
         "SUPER, F, togglefloating"
         "SUPER SHIFT, F, fullscreen"
-        "SUPER, T, exec, kitty"
+        "SUPER, T, exec, ghostty"
+        "SUPER SHIFT, T, exec, kitty"
         "SUPER CTRL, Escape, exit"
         "SUPER, Escape, exec, hyprlock"
+        "SUPER, P, pin, active"
+        "SUPER, SHIFT, P, pseudo"
 
         # Clipboard management
-        "SUPER, V, exec, rofi -modi \"clipboard:greenclip print\" -show clipboard -run-command '{cmd}'"
-        "SUPER SHIFT, V, exec, greenclip clear"
+        # "SUPER, V, exec, rofi -modi \"clipboard:greenclip print\" -show clipboard -run-command '{cmd}'"
+        # "SUPER SHIFT, V, exec, greenclip clear"
 
         # Rofi launchers
         "SUPER, Space, exec, ulauncher-toggle"
         # "SUPER, Space, exec, rofi -show combi -combi-modi \"drun,obsidian:rofi-obsidian,emoji,power:rofi-power-menu\" -modi combi"
-        "SUPER CTRL, Space, exec, rofi -show calc"
         "SUPER, W, exec, ~/.config/sh/wall-choose.sh"
         "SUPER ALT, W, exec, kitty --hold sh ~/.config/sh/wall-regenerate.sh"
 
         # Screenshot bindings
-        "SUPER, P, exec, screenl"
-        "SUPER SHIFT, P, exec, screens"
-        "CTRL, home, exec, screent"
+        "SUPER, S, exec, screenl"
+        "SUPER SHIFT, S, exec, screens"
 
         # VIM
         # Focus movement

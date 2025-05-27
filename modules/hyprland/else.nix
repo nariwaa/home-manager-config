@@ -1,15 +1,14 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, osConfig, ... }:
 {
   wayland.windowManager.hyprland = {
-    package = pkgs.hyprland;
-    # portalPackage = pkgs.xdg-desktop-portal-hyprland;
+    enable = true;
+    package = osConfig.programs.hyprland.package;
 
     systemd = {     
       enable = true;     
       variables = ["--all"];     
     };
 
-    # enable = true;
     settings = {
       # Startup applications
       "exec-once" = [
@@ -21,7 +20,6 @@
         "fcitx5 -d -r"
         "fcitx5-remote -r"
         "dunst"
-        "greenclip daemon"
         "hyprctl hyprctl setcursor Bibata-Modern-Classic 35"
         "ulauncher"
       ];
@@ -36,6 +34,7 @@
         "move 80% 100,class:^(brave-t3.chat__-Default)$"
         "rounding 0,class:^(brave-t3.chat__-Default)$"
         "bordercolor 0,class:^(brave-t3.chat__-Default)$"
+        "animation slide bottom,class:^(Rofi)$"
       ];
 
       # Environment variables
@@ -45,9 +44,6 @@
       ];
 
       # Window rules
-      windowrule = [
-        "pseudo, fcitx"
-      ];
 
       # Animations
       animations = {
