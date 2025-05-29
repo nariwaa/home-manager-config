@@ -15,5 +15,6 @@
       ./../modules/hyprlock.nix
       ./../modules/else.nix
       ./../modules/sh.nix
+      # ./../modules/ghostty.nix
     ];
 }

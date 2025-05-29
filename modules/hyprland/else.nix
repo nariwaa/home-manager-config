@@ -34,7 +34,6 @@
         "move 80% 100,class:^(brave-t3.chat__-Default)$"
         "rounding 0,class:^(brave-t3.chat__-Default)$"
         "bordercolor 0,class:^(brave-t3.chat__-Default)$"
-        "animation slide bottom,class:^(Rofi)$"
       ];
 
       # Environment variables

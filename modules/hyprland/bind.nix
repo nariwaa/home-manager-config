@@ -16,7 +16,7 @@
         "SUPER CTRL, Escape, exit"
         "SUPER, Escape, exec, hyprlock"
         "SUPER, P, pin, active"
-        "SUPER, SHIFT, P, pseudo"
+        "SUPER SHIFT, P, pseudo"
 
         # Clipboard management
         # "SUPER, V, exec, rofi -modi \"clipboard:greenclip print\" -show clipboard -run-command '{cmd}'"

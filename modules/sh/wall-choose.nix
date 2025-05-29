@@ -1,15 +1,17 @@
 {
   home.file."/home/ayaya/.config/sh/wall-choose.sh" = {
     text = ''
+      #!/usr/bin/env bash
+
       display_wallpapers() {
-          local mode=$1
-          local dir="/home/ayaya/Wall/$mode"
+          local mode=$1 # "Light" or "Dark"
+          local dir="$HOME/Wall/$mode"
           local wallpaper_picker_theme=""
 
           if [[ "$mode" == "Dark" ]]; then
-            wallpaper_picker_theme="/home/ayaya/.config/rofi/themes/wall-dark.rasi"
+            wallpaper_picker_theme="$HOME/.config/rofi/themes/wall-dark.rasi"
           else
-            wallpaper_picker_theme="/home/ayaya/.config/rofi/themes/wall-light.rasi"
+            wallpaper_picker_theme="$HOME/.config/rofi/themes/wall-light.rasi"
           fi
 
           local selected=$(find "$dir" -type f \( -iname "*.gif" -o -iname "*.png" \) | \
@@ -21,7 +23,10 @@
                       -width 1000 -lines 10 -eh 1 -matching fuzzy)
 
           if [[ -n "$selected" ]]; then
-            wall "$selected"
+            # Call 'wall' script with the selected wallpaper and the mode
+            # This assumes 'wall' (your pkgs.writeShellScriptBin "wall" script)
+            # is in your PATH.
+            wall "$selected" "$mode"
           fi
       }
 
@@ -29,9 +34,9 @@
       simple_mode_theme=""
 
       if (( current_hour >= 6 && current_hour < 19 )); then
-        simple_mode_theme="/home/ayaya/.config/rofi/themes/select-light.rasi"
+        simple_mode_theme="$HOME/.config/rofi/themes/select-light.rasi"
       else
-        simple_mode_theme="/home/ayaya/.config/rofi/themes/select-dark.rasi"
+        simple_mode_theme="$HOME/.config/rofi/themes/select-dark.rasi"
       fi
 
       tlight="󰖨"
