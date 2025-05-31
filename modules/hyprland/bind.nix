@@ -27,6 +27,7 @@
         # "SUPER, Space, exec, rofi -show combi -combi-modi \"drun,obsidian:rofi-obsidian,emoji,power:rofi-power-menu\" -modi combi"
         "SUPER, W, exec, ~/.config/sh/wall-choose.sh"
         "SUPER ALT, W, exec, kitty --hold sh ~/.config/sh/wall-regenerate.sh"
+        "SUPER SHIFT, W, exec, ~/.config/sh/wall-random.sh"
 
         # Screenshot bindings
         "SUPER, S, exec, screenl"
