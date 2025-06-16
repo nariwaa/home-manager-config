@@ -124,6 +124,8 @@
         "SUPER, bracketright, exec, brightnessctl set 5%+"
         "SUPER SHIFT, bracketleft, exec, brightnessctl set 1%-"
         "SUPER SHIFT, bracketright, exec, brightnessctl set 1%+"
+        "SUPER ALT, bracketleft, exec, hyprctl hyprsunset gamma -20"
+        "SUPER ALT, bracketright, exec, hyprctl hyprsunset gamma +20"
       ];
 
       # Media key bindings

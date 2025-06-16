@@ -22,6 +22,8 @@
         "dunst"
         "hyprctl hyprctl setcursor Bibata-Modern-Classic 35"
         "ulauncher"
+        "hyprsunset"
+        "~/.config/sh/autosunset.sh"
       ];
 
       windowrulev2 = [
