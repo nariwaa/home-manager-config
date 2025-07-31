@@ -36,6 +36,16 @@
         "move 80% 100,class:^(brave-t3.chat__-Default)$"
         "rounding 0,class:^(brave-t3.chat__-Default)$"
         "bordercolor 0,class:^(brave-t3.chat__-Default)$"
+
+        "float,class:^(brave-x.com__compose_post_-Default)$"
+        "noborder,class:^(brave-x.com__compose_post_-Default)$"
+        "xray,class:^(brave-x.com__compose_post_-Default)$"
+        "animation slide left,class:^(brave-x.com__compose_post_-Default)$"
+        "opacity 0.94 override 0.89 override 1 override,class:^(brave-x.com__compose_post_-Default)$"
+        "size 30% 30%,class:^(brave-x.com__compose_post_-Default)$"
+        "move 1% 60%,class:^(brave-x.com__compose_post_-Default)$"
+        "rounding 30,class:^(brave-x.com__compose_post_-Default)$"
+        "bordercolor 0,class:^(brave-x.com__compose_post_-Default)$"
       ];
 
       # Environment variables
